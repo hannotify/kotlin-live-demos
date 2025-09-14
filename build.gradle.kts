@@ -1,8 +1,8 @@
 plugins {
-    kotlin("jvm") version "1.9.23"
+    kotlin("jvm") version "2.2.20"
 }
 
-group = "com.hannotify"
+group = "com.infosupport.kotlin"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -12,6 +12,9 @@ repositories {
 dependencies {
     testImplementation(kotlin("test"))
     testImplementation("com.willowtreeapps.assertk:assertk:0.28.1")
+    implementation("org.jetbrains.kotlin:kotlin-reflect:2.2.20")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
+
 }
 
 tasks.test {
